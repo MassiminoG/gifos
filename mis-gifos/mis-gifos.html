@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="author" content="Graziano Massimino">
+    <meta
+        name="description"
+        content="Proyecto GifOS para la carrera de desarrollo web full stack">
+    <link href="https://fonts.googleapis.com/css?family=Chakra+Petch&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="../assets/images/globe_img.png" type="image/x-icon">
+    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="stylesheet" href="./mis-gifos.css">
+    <title>Capturar - GifOS</title>
+</head>
+<body>
+    <header class="gradient" id="contador-visitas">
+        ¡Bienvenidos/as a Guifos.com! ——————Donde los gifs están.////// Número de visitas: 
+    </header>
+    <nav>
+        <a href="../index.html"><div class="arrow-back" id="arrow-back"></div></a>
+        <div class="logo"></div>
+        <div class="options">
+            <button class="btn btn-primary" id="btn-create-gif">
+                <span class="text">Crear Guifos</span>
+            </button>
+            <div class="menu-changer" id="theme-dropdown">
+                <button class="btn btn-primary btn-dropdown" id="btn-select-theme">
+                    <span class="text">Elegir Tema</span>
+                </button>
+                <div class="menu-list container">
+                    <button class="btn btn-theme active" id="theme-day">
+                        <span class="underline">S</span>ailor day
+                    </button>
+                    <button class="btn btn-theme" id="theme-night">
+                        <span class="underline">S</span>ailor night
+                    </button>
+                </div>
+            </div>
+            <button class="btn btn-link" id="btn-mis-gifos">
+                <span class="underline">M</span>is Guifos
+            </button>
+        </div>
+    </nav>
+    <div class="main-container mis-gifos">
+        <section class="mensaje hidden" id="mensaje">
+            <div class="container">
+                <div class="gradient">
+                    <p>Atención</p>
+                </div>
+                <div class="informacion">
+                    <img src="../assets/images/info_img.png" class="icono" alt="icono">
+                    <div class="texto">
+                        <h2>Aquí podrás visualizar tus gifOS</h2>
+                        Para ello debes crearlos previamente desde la opcion <strong>Cregar Guifos</strong>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="resultado hidden" id="section-mis-gifos">            
+            <div class="titulo">Mis guifos</div>
+            <div class="resultado-mis-gifos" id="resultado-mis-gifos"></div>
+        </section>
+        <button onclick="topFunction()" class="btn btn-primary btn-to-top" id="btn-to-top" title="Volver al inicio">
+            <span></span>
+        </button>
+    </div>
+    <script src="../js/common.js"></script>
+    <script src="./mis-gifos.js"></script>
+</body>
+</html>

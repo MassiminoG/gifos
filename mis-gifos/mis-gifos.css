@@ -1,0 +1,161 @@
+.mis-gifos {
+  margin-top: 16px;
+  margin-bottom: 30px;
+}
+
+.mis-gifos .titulo {
+  padding: 7px;
+}
+
+.mis-gifos .mensaje {
+  padding: 75px 21.9% 75px 18.4%;
+}
+
+.mis-gifos .mensaje .container h2 {
+  font-size: 16px;
+  color: #110038;
+  letter-spacing: 0;
+  line-height: 22px;
+  margin-top: 8px;
+}
+
+.mis-gifos .mensaje .container .gradient {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  width: 100%;
+}
+
+.mis-gifos .mensaje .container .gradient p {
+  color: #FFF;
+  padding: 3.4px 7px 2.6px;
+  width: 100%;
+}
+
+.mis-gifos .mensaje .container .gradient img {
+  margin-right: 10px;
+}
+
+.mis-gifos .mensaje .container .cuerpo {
+  padding: 8px 11px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.mis-gifos .mensaje .container .informacion {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.mis-gifos .mensaje .container .informacion .icono {
+  width: 32px;
+  height: 29px;
+  margin-top: 30px;
+  margin-left: 25px;
+}
+
+.mis-gifos .mensaje .container .informacion .texto {
+  margin: 30px 16px 28px 16px;
+}
+
+.mis-gifos .mensaje .container .informacion .texto h2 {
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: 22px;
+  font-weight: 900;
+  margin-bottom: 17px;
+}
+
+.mis-gifos .mensaje .container .informacion .texto ol {
+  list-style: none;
+}
+
+.mis-gifos .mensaje .container .informacion .texto ol li {
+  margin: 11px 0;
+  counter-increment: item;
+}
+
+.mis-gifos .mensaje .container .informacion .texto ol li::before {
+  content: counter(item) ") ";
+  font-weight: 900;
+}
+
+.mis-gifos .mensaje .container .informacion .texto strong {
+  font-weight: 900;
+}
+
+.mis-gifos .resultado-mis-gifos {
+  margin-top: 16px;
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 16px;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  grid-auto-flow: dense;
+}
+
+.mis-gifos .resultado-mis-gifos .item {
+  position: relative;
+  width: 100%;
+  height: auto;
+  padding: 2px;
+}
+
+.mis-gifos .resultado-mis-gifos .item.doble {
+  grid-column: span 2;
+}
+
+.mis-gifos .resultado-mis-gifos .item .container {
+  padding: 0;
+  border: 1px solid transparent;
+}
+
+.mis-gifos .resultado-mis-gifos .item img {
+  height: 298px;
+  width: 100%;
+}
+
+@media screen and (max-width: 767px) {
+  .mis-gifos .resultado-mis-gifos {
+    -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
+    grid-gap: 0 0 16px 0;
+  }
+  .mis-gifos .resultado-mis-gifos .item.doble {
+    grid-column: unset;
+  }
+}
+/*# sourceMappingURL=mis-gifos.css.map */
